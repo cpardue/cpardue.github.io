@@ -25,7 +25,7 @@ xing_link:
 facebook_link:
 
 # Footer
-footer_left: "<i class=\"fa fa-linkedin\"></i><a href=\"https://www.linkedin.com/in/chris-pardue/\">LinkedIn</a>"
+footer_left: "<i class=\"fa fa-linkedin\"></i> &nbsp;<a href=\"https://www.linkedin.com/in/chris-pardue/\">LinkedIn</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/cpardue\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
