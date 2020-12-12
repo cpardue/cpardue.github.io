@@ -9,9 +9,9 @@ tags:
  - Certs
 ---
 
-# purpose: jotted down notes to reference and look into based on the ItProTv CySA training course I underwent
+cysanotes.txt purpose: jotted down notes to reference and look into based on the ItProTv CySA training course I underwent
 
-DAY ZERO
+## DAY ZERO
 
 theharvester -d <domain> -b <bing,google,linkedin>
 
@@ -71,7 +71,7 @@ IR's intelligence requirements
 
 cd /var/log && sudo grep -i "fail" *.log | grep "password"
 
-DAY ONE
+## DAY ONE
 
 commodity malware vs more advanced targetted malware
 
@@ -169,7 +169,7 @@ scan types
 
 credentialed vs non-credentialed
 
-DAY TWO
+## DAY TWO
 
 remediation inhibitors on legacy vs proprietary vs degraded functionality etc
 
@@ -247,7 +247,7 @@ llmnr poisoning
 
 responder -I eth0 -v (now it's listening for events)
 
-DAY THREE
+## DAY THREE
 
 reaver for WPS attacks
 
@@ -293,7 +293,7 @@ vmware airwatch
 
 mobileiron
 
-DAY FOUR
+## DAY FOUR
 
 PLC's
 
@@ -413,7 +413,7 @@ CIA triad
 
 https://www.first.org/cvss/specification-document
 
-DAY FIVE
+## DAY FIVE
 
 public cloud threats
 
@@ -533,7 +533,7 @@ weak/default configs
 
 insecure functions
 
-DAY SIX
+## DAY SIX
 
 asset management
 
@@ -711,7 +711,7 @@ parameterized queries
 
 formalized methods to hunt edge case bugs
 
-DAY SEVEN
+## DAY SEVEN
 
 trend analysis
 
@@ -795,7 +795,7 @@ look for NX domain errors
 
 mitigation via blacklisting/whitelisting and recursive dns resolvers to fact-check other dns
 
-DAY EIGHT
+## DAY EIGHT
 
 packet analysis
 
@@ -915,7 +915,7 @@ pipes and logical operators
 
 data enrichment, adding additional external info/threat feeds to alerts
 
-DAY NINE
+## DAY NINE
 
 email analysis
 
@@ -1103,7 +1103,7 @@ location based controls
 
 role based controls
 
-DAY TEN
+## DAY TEN
 
 blackholes vs sinkholes
 
@@ -1217,7 +1217,7 @@ continuous delivery
 
 continuous deployment
 
-DAY ELEVEN
+## DAY ELEVEN
 
 incident response communication
 
@@ -1375,7 +1375,7 @@ application service interruption
 
 application gaps in logs
 
-DAY TWELVE
+## DAY TWELVE
 
 digital forensics phases
 
@@ -1463,7 +1463,7 @@ unsupported filesystems, may be heavily fragmented
 
 lost system logs
 
-DAY THIRTEEN
+## DAY THIRTEEN
 
 privacy vs security
 
@@ -1521,7 +1521,7 @@ data minimization data should only be processed and stored to accomplish purpose
 
 data sovereignty aligns data to geographies used in
 
-DAY FOURTEEN
+## DAY FOURTEEN
 
 data should have a shelf life
 
@@ -1621,7 +1621,7 @@ data in transit, tls and ssl
 
 encryption of session keys in memory
 
-DAY FIFTEEN
+## DAY FIFTEEN
 
 de-identification is basically removing PII, PHI, redacting such information so that elements cannot be identified
 
@@ -1737,6 +1737,6 @@ WRT work recovery time is the time it takes to move from service restoration to 
 
 RPO recovery point objective is the amount of data loss a system can sustain, measured in time
 
-DAY SIXTEEN
+## DAY SIXTEEN
 
 Done
