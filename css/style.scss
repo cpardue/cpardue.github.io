@@ -21,6 +21,7 @@ $dark:           #2D2D29;
 $medium:         #3B3B35;
 $light-medium:   #969696;
 $dark-blue:      #215A6D;
+$neon-red:	 #FF124F:
 $light-blue:     #3CA2A2;
 $green:          #92C7A3;
 $light:          #DFECE6;
@@ -54,12 +55,12 @@ body {
 }
 
 a, a:active {
-	color: $dark-blue;
+	color: $neon-red;
 	text-decoration: none;
 }
 
 a:hover {
-	color: $dark-blue;
+	color: $neon-red;
 	text-decoration: none;
 }
 
@@ -68,7 +69,7 @@ ul {
 }
 
 .navbar, .nav {
-	background-color: $dark-blue;
+	background-color: $neon-red;
 
 	.navbar-toggle {
 		margin-top: 10px;
@@ -83,7 +84,7 @@ ul {
 		}
 
 		a:hover {
-			color: $dark-blue;
+			color: $neon-red;
 			text-decoration: none;
 		}
 	}
@@ -135,7 +136,7 @@ ul {
 	padding-right: 30px;
 	margin-top: 20px;
 	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
-	border-bottom: 5px solid $dark-blue;
+	border-bottom: 5px solid $neon-red;
 }
 
 #my-menu {
@@ -149,7 +150,7 @@ ul {
 	}
 
 	a:hover {
-		color: $dark-blue;
+		color: $neon-red;
 	}
 
 	.pages {
@@ -252,12 +253,12 @@ ul {
 	}
 
 	.content-panel:nth-of-type(1) {
-		border-bottom: 10px solid $dark-blue;
+		border-bottom: 10px solid $neon-red;
 	}
 
 	.author-header {
 		font-family: 'Montserrat', sans-serif;
-		color: $dark-blue;
+		color: $neon-red;
 		margin-top: 0px;
 		padding-top: 15px;
 		font-size: 30px;
@@ -306,7 +307,7 @@ ul {
 
 		h2 {
 			margin-bottom: 30px;
-			color: $dark-blue;
+			color: $neon-red;
 			font-size: 26px;
 		}
 
@@ -346,7 +347,7 @@ ul {
 		}
 
 		a:hover {
-			color: $dark-blue;
+			color: $neon-red;
 		}
 	}
 
@@ -373,7 +374,7 @@ ul {
 		}
 
 		a:hover {
-			color: $dark-blue;
+			color: $neon-red;
 		}
 
 		ul {
@@ -469,14 +470,14 @@ ul {
 
 	.menu {
 
-		background-color: $dark-blue;
+		background-color: $neon-red;
 
 		a, a:active {
 			color: $white;
 		}
 
 		a:hover {
-			color: $dark-blue;
+			color: $neon-red;
 		}
 
 		h4 {
@@ -699,7 +700,7 @@ ul {
 				}
 
 				a:hover {
-					color: $dark-blue;
+					color: $neon-red;
 				}
 
 			}
@@ -746,7 +747,7 @@ ul {
 		}
 
 		a:hover {
-			color: $dark-blue;
+			color: $neon-red;
 		}
 	}
 
@@ -809,7 +810,7 @@ ul {
 		margin-top: 30px;
 
 		a {
-			color: $dark-blue;
+			color: $neon-red;
 		}
 	}
 
@@ -850,34 +851,34 @@ ul {
 }
 
 .btn-categories {
-	background-color: $dark-blue;
-	border-color: $dark-blue;
+	background-color: $neon-red;
+	border-color: $neon-red;
 	color: $white;
 	&:hover {
-		background-color: $dark-blue;
-		border-color: $dark-blue;
+		background-color: $neon-red;
+		border-color: $neon-red;
 		color: $white;
 	}
 	&:active {
-		background-color: $dark-blue;
-		border-color: $dark-blue;
+		background-color: $neon-red;
+		border-color: $neon-red;
 		color: $white;
 	}
 	&:focus {
-		background-color: $dark-blue;
-		border-color: $dark-blue;
+		background-color: $neon-red;
+		border-color: $neon-red;
 		color: $white;
 	}
 }
 
 .dropdown-menu {
-	background-color: $dark-blue;
+	background-color: $neon-red;
 	color: $white;
 	> li > a {
-		background-color: $dark-blue;
+		background-color: $neon-red;
 		color: $white;
 		&:hover {
-			background-color: $dark-blue;
+			background-color: $neon-red;
 			color: $white;
 		}
 	}
@@ -897,5 +898,5 @@ th{
 
 td{
     padding: 2px;
-    border:1px solid $dark-blue;;
+    border:1px solid $neon-red;;
 }
