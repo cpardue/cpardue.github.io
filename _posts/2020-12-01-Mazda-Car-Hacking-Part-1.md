@@ -9,7 +9,7 @@ tags:
  - Research
 ---
 
-My Kia Soul was recently totaled out.  I got a loan and picked a car.  The car: 2016.5 Mazda CX-5.  After purchasing said car from Carvana, I decided to look into its features.  Naturally, my google-fu steered me to some links about Mazda Infotainment hacking.  Most notably: [This video of a guy popping a shell with a backdoor][1] and [this repo of a developed set of tweaks exploiting a known JCI vulnerability][2].  
+My Kia Soul was recently totaled out.  I got a loan and picked a car.  The car: 2016.5 Mazda CX-5.  After purchasing said car from Carvana, I decided to look into its features.  Naturally, my google-fu steered me to some links about Mazda Infotainment hacking.  Most notably: [This video][1] of a guy popping a shell with a backdoor and [this repo][2] of a developed set of tweaks exploiting a known JCI vulnerability.  
  <br>
  <br>
 ## Summary: 
