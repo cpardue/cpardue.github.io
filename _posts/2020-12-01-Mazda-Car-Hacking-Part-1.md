@@ -3,13 +3,13 @@ layout:     post
 title:      Mazda CX 5 Car Hacking - Part 1
 date:       2020-12-06 
 summary:    Quick adventure in discovering that I'll be able to root my new car
-categories: administrative
+categories: Research
 thumbnail: jekyll
 tags:
  - Research
 ---
 
-My Kia Soul was recently totaled out.  I got a loan and picked a car.  The car: 2016.5 Mazda CX-5.  After purchasing said car from Carvana, I decided to look into its features.  Naturally, my google-fu steered me to some links about Mazda Infotainment hacking.  Most notably: [This video][1] of a guy popping a shell with a backdoor and [this repo][2] of a developed set of tweaks exploiting a known JCI vulnerability.  
+My Kia Soul was recently totaled out.  I got a loan and picked a car.  The car: 2016.5 Mazda CX-5.  After purchasing said car from Carvana, I decided to look into its features.  Naturally, my google-fu steered me to some links about Mazda Infotainment hacking.  Most notably: This [video][1] of a guy popping a shell with a backdoor and this [repo][2] of a developed set of tweaks exploiting a known JCI vulnerability.  
  <br>
  <br>
 ## Summary: 
@@ -37,5 +37,7 @@ Start small.
 <br>
 -Generate MZD-AIO tweaks, install, test
 <br>
-[1]: https://www.youtube.com/watch?v=8K6rBLaPF1A
-[2]: https://github.com/Trevelopment/MZD-AIO/
+
+
+[1]: http://www.youtube.com/watch?v=8K6rBLaPF1A/
+[2]: http://github.com/Trevelopment/MZD-AIO/
