@@ -7,6 +7,7 @@
 /* Colours */
 $twitter:        #6dabda;
 $linkedin:       #2b77b1;
+$hackthebox:	 #00ff00;
 $xing:           #006567;
 $google-plus:    #c95644;
 $facebook:       #365899;
@@ -187,6 +188,10 @@ ul {
 
 	.fa-linkedin:hover {
 		color: $linkedin;
+	}
+
+	.fa-cube:hover {
+		color: $hackthebox;
 	}
 	
 	.fa-xing:hover {
