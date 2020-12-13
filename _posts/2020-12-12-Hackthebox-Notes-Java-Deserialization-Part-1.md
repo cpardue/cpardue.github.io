@@ -13,8 +13,7 @@ current IP 10.10.10.214
 ran nmap -sT -sV -A -p- -oN nmapsT --script=vuln <ip>  
 idk if i can do --script=vuln in conjunction with -sV or -A, let's see  
 looks like it runs pretty well  
-results:   
----  
+results:     
 PORT   STATE SERVICE VERSION  
 22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)  
 | vulners:   
@@ -47,21 +46,18 @@ PORT   STATE SERVICE VERSION
 |       CVE-2020-1927   5.8     https://vulners.com/cve/CVE-2020-1927  
 |       CVE-2020-9490   5.0     https://vulners.com/cve/CVE-2020-9490  
 |       CVE-2020-1934   5.0     https://vulners.com/cve/CVE-2020-1934  
-|_      CVE-2020-11993  4.3     https://vulners.com/cve/CVE-2020-11993  
----  
+|_      CVE-2020-11993  4.3     https://vulners.com/cve/CVE-2020-11993    
 checking http page  
 interesting, it's a json parser with input/output form  
 input/output form has two options:   
 	Beautify (the input)   
 	Validate (the input)  
 ran <script>alert(1)</script> into Validate option  
-got the following output:  
----  
+got the following output:    
 Validation failed: Unhandled Java exception:  
 com.fasterxml.jackson.core.JsonParseException:   
 Unexpected character ('<' (code 60)):   
-expected a valid value (number, String, array, object, 'true', 'false' or 'null')  
----  
+expected a valid value (number, String, array, object, 'true', 'false' or 'null')    
 this is prob the way in, but keep enumerating http  
 checked http source...nothing special  
 ran OWASP ZAP Proxy against http...nothing special  
