@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Hackthebox Notes Java Deserialization Part 1
-date:       2012-12-12
+date:       2020-12-12
 summary:    First run of poking on the next easiest medium-difficulty machine available on Hackthebox
 categories: CTF
 thumbnail: cogs
