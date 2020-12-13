@@ -7,6 +7,7 @@ categories: Research
 thumbnail: jekyll
 tags:
  - Research
+ - rooted
 ---
 
 I had 10 minutes tonight of just me, my car, and a keyboard, to test out methods I've researched for gaining a shell on the car.  Below are the steps I followed to gain a root shell to the system, this will work for any Mazda with a JCI infotainment system and un-patched firmware.  
