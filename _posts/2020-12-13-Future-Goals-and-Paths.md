@@ -8,6 +8,7 @@ thumbnail: cogs
 tags:
  - Career
 ---
+Hello, I'd like to make an announcement.  
 Since 2015, I have been gathering information from various sources on what exactly I could do with my life, and how exactly I might succeed in doing it.  
 I decided to get into Digital Security, ie. Cyber Security, Infosec.  It appears to mesh well with my personal assets and liabilities as a human being.  
 
