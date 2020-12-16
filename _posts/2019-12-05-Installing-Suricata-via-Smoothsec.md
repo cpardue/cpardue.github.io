@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Installing Suricata via Smoothsec
-date:       2019-12-5
+date:       2019-12-05
 summary:    Installing Suricata via the very cool Suricata/Snort Smoothsec project
 categories: Homelab
 thumbnail: cogs
