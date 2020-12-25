@@ -14,9 +14,9 @@ Reverse shells are crappy and have no features.  Try Ctrl+a, up-arrow, or even p
 So here is the method I've found for upgrading and stabilizing a reverse shell.  
 
 {% highlight ruby %}
-python3 -c 'import pty;pty.spawn("/bin/bash")'  //Imports a better python bash shell
-export TERM=xterm  //gives term commands like Clear
-Ctrl + Z  //backgrounds shell for a sec in order to...
-stty raw -echo; fg  //  turn off terminal echo and allow arrows, autocomplete, ctrl+xyz, etc, then foreground
-//if the shell dies, you no longer have terminal echo thus won't see it, try 'reset' command
+python3 -c 'import pty;pty.spawn("/bin/bash")'  
+export TERM=xterm  
+Ctrl + Z  
+stty raw -echo; fg  
+//if the shell dies, try 'reset' command
 {% endhighlight %}
