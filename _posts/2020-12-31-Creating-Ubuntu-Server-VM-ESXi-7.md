@@ -64,7 +64,7 @@ In the VM Console, go ahead and follow the reboot prompt all the way through
 Step Four - Configure the OS  
 
 Open a shell and run the following commands blindly  
-sudo apt-get -y && sudo apt-get upgrade -y  
+sudo apt-get update -y && sudo apt-get upgrade -y  
 
 Check passwd to make sure only Root has a 0 UID  
 awk -F: '($3=="0"){print}' /etc/passwd  
