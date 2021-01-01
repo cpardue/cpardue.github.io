@@ -67,28 +67,29 @@ Open a shell and run the following commands blindly
 sudo apt-get update -y && sudo apt-get upgrade -y  
 
 Check passwd to make sure only Root has a 0 UID  
-awk -F: '($3=="0"){print}' /etc/passwd  
+sudo cat /etc/passwd | grep :0:  
 
 Check shadow for accounts with empty password  
-cat /etc/shadow | awk -F: '($2==""){print $1}'
+cat /etc/shadow | grep ::
 
 If there are any stock accounts that need to be locked down then lock them  
-passwd -l <accountName>  
+passwd -l accountName
 
 Lock down shared memory  
-sudo echo 'tmpfs /run/shm tmpfs defaults,noexec,nosuid 0 0' >> /etc/fstab && sudo tail -2 /etc/fstab  
+sudo nano /etc/fstab  
+Edit in at last line: tmpfs /run/shm tmpfs defaults,noexec,nosuid 0 0  
 
 Lock down SSH  
 sudo nano /etc/ssh/sshd_config  
 Edit the Protocol line with 2  
-Edit the AllowUsers line with <yourUser>@<yourLanNetworkPrefix>.*  
+Edit the AllowUsers line with yourUser@yourLanNetworkPrefix.*  
 Edit the PermitRootLogin line with no  
 Edit the PermitEmptyPasswords line with no  
 Edit the X11Forwarding line with no  
 
 Lock down SU (by creating a base configuration)  
 sudo groupadd admin  
-sudo usermod -a -G admin <yourUser>  
+sudo usermod -a -G admin yourUser  
 sudo dpkg-statoverride --update --add root admin 4750 /bin/su  
 
 Install Fail2Ban  
