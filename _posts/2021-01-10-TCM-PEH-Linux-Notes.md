@@ -18,4 +18,107 @@ I am not altogether against it.  Below I've opted to paste my notes into an onli
 Maybe I should write a python tool to convert my raw notes into markdown, as practice.  
 Maybe.  
 
-new%20kali%20and%20sudo%0A%20%20%20%20new%20kali%20uses%20non-privileged%20user%0A%20%20%20%20use%20sudo%20to%20run%20as%20root%20now,%20duh%0A%20%20%20%20su%20-%20to%20switch%20to%20root%20with%20kali's%20pw,%20duh%0A%20%20%20%20%0Anavigating%20filesystem%0A%20%20%20%20pwd%0A%20%20%20%20%20%20%20%20print%20present%20working%20directory%0A%20%20%20%20cd%20..%0A%20%20%20%20%20%20%20%20change%20dir%20up%20one%20dir%0A%20%20%20%20ls%20-lha%0A%20%20%20%20%20%20%20%20list%20contents%20(long,%20human%20readable,%20all)%0A%20%20%20%20~%0A%20%20%20%20%20%20%20%20shorthand%20for%20home%20dir%0A%20%20%20%20mkdir%20newFolder%0A%20%20%20%20%20%20%20%20make%20directory%20newFolder%20here%0A%20%20%20%20echo%20%E2%80%9Cthis%20text%E2%80%9D%20%3E%20newfile%0A%20%20%20%20%20%20%20%20output%20%E2%80%9Cthis%20text%E2%80%9D%20overwritten%20into%20newfile%0A%20%20%20%20cp%20/location/A/file%20/location/B/file%0A%20%20%20%20%20%20%20%20copy%20file%20from%20A%20to%20B%0A%20%20%20%20mv%20/path/A/file%20/path/B/FILE%0A%20%20%20%20%20%20%20%20move%20and%20rename%20file%20from%20A%20to%20B%0A%20%20%20%20updatebd%0A%20%20%20%20%20%20%20%20update%20cache%20of%20locations%20and%20paths%0A%20%20%20%20%20%20%20%20%20%20%20%20do%20this%20semi-frequently%0A%20%20%20%20passwd%0A%20%20%20%20%20%20%20%20change%20current%20user%20password%0A%20%20%20%20%20%20%20%20%20%20%20%20enter%20twice%20to%20over-ride%20complexity%20rules%0A%20%20%20%20man%20command%0A%20%20%20%20%20%20%20%20manpage%20for%20command%0A%20%20%20%20command%20--help%0A%20%20%20%20%20%20%20%20abbreviated%20manpage%20(sometimes)%0A%0AUsers%20and%20Privileges%0A%20%20%20%20rwx/rwx/rwx%20owner%20group%0A%20%20%20%20%20%20%20%20owner/group/all%20owner%20group%0A%20%20%20%20rwx%20=%20421%20bits%0A%20%20%20%20%20%20%20%20777%20=%20rwxrwxrwx%0A%20%20%20%20%20%20%20%20111%20=%20r--r--r--%0A%20%20%20%20%20%20%20%20123%20=%20r---w-rw-%0A%20%20%20%20chmod%20-switch%20file%0A%20%20%20%20%20%20%20%20switch%20can%20be%20bits%20or%20switch%0A%20%20%20%20%20%20%20%20switch%20can%20set%20sticky%20bit%20too%0A%20%20%20%20%20%20%20%20%20%20%20%20set%20sticky%20bit%20=%20u+s%0A%20%20%20%20%20%20%20%20%20%20%20%20remove%20sticky%20bit%20=%20u-s%0A%20%20%20%20adduser%0A%20%20%20%20%20%20%20%20check%20the%20man%20for%20the%20cool%20switches%0A%20%20%20%20addgroup%0A%20%20%20%20%20%20%20%20again%20check%20the%20man%20for%20the%20cool%20options%0A%20%20%20%20deluser%0A%20%20%20%20%20%20%20%20delete%20user%0A%20%20%20%20usermod%0A%20%20%20%20%20%20%20%20modify%20user%0A%20%20%20%20passwd%0A%20%20%20%20%20%20%20%20passwd%20-switch%20username%0A%20%20%20%20su%20username%0A%20%20%20%20%20%20%20%20switch%20to%20user%20username%0A%0ACommon%20Network%20Commands%0A%20%20%20%20ifconfig%0A%20%20%20%20%20%20%20%20legacy%20ip%20addr%0A%20%20%20%20iwconfig%0A%20%20%20%20%20%20%20%20wireless%20%20%20%20%0A%20%20%20%20ip%20addr%0A%20%20%20%20%20%20%20%20replaced%20ifconfig%0A%20%20%20%20%20%20%20%20ip%20addr%20%7C%20grep%20%E2%80%98inet%20%E2%80%99%0A%20%20%20%20ping%20-c%20n%20ip%0A%20%20%20%20%20%20%20%20ping%20n%20times%20this%20ip%0A%20%20%20%20arp%20-a%0A%20%20%20%20%20%20%20%20check%20ip%20and%20mac%20directly%20associated%0A%20%20%20%20netstat%0A%20%20%20%20%20%20%20%20view%20connections%0A%20%20%20%20%20%20%20%20netstat%20-ant%20%0A%20%20%20%20%20%20%20%20%20%20%20%20tcp%0A%20%20%20%20%20%20%20%20netstat%20-anu%0A%20%20%20%20%20%20%20%20%20%20%20%20udp%0A%20%20%20%20route%0A%20%20%20%20%20%20%20%20prints%20routing%20table%0A%0AInstalling%20and%20Updating%20Tools%0A%20%20%20%20sudo%20apt-get%20update%20-y%20&&%20sudo%20apt-get%20upgrade%20-y%0A%20%20%20%20sudo%20apt-get%20dist-upgrade%20-y%0A%20%20%20%20sudo%20apt-get%20install%20pip3%0A%20%20%20%20pimpmykali.sh%0A%20%20%20%20%20%20%20%20rm%20-rf%20pimpmykali/%0A%20%20%20%20%20%20%20%20git%20clone%20https://github.com/Dewalt-arch/pimpmykali%0A%20%20%20%20%20%20%20%20cd%20pimpmykali%0A%20%20%20%20%20%20%20%20sudo%20./pimpmykali.sh%0A%20%20%20%20%20%20%20%20%20%20%20%20select%200%0A%20%20%20%20sudo%20apt%20install%20gedit%20-y%0A%20%20%20%20sudo%20apt%20install%20flameshot%20-y%0A%0AViewing,%20Creating,%20and%20Editing%20Files%0A%20%20%20%20echo%20%E2%80%98string%E2%80%99%20%3E%20textfile%0A%20%20%20%20echo%20%E2%80%98string%E2%80%99%20%3E%3E%20textfile%0A%20%20%20%20%20%20%20%20appends%20the%20data%0A%20%20%20%20cat%20filename%0A%20%20%20%20more%20filename%0A%20%20%20%20less%20filename%0A%20%20%20%20%20%20%20%20less%20is%20more%20than%20more%0A%20%20%20%20head%20-n%20filename%0A%20%20%20%20%20%20%20%20list%20first%20n%20lines%20of%20filename%0A%20%20%20%20tail%20-n%20filename%0A%20%20%20%20%20%20%20%20list%20last%20n%20lines%20of%20filename%0A%20%20%20%20tail%20-f%20filename%0A%20%20%20%20%20%20%20%20cats%20tail%20of%20filename%20perpetually,%20good%20for%20logs%0A%20%20%20%20touch%20filename%0A%20%20%20%20%20%20%20%20changes%20timestamp%20to%20time%20touched%0A%20%20%20%20%20%20%20%20creates%20file%20that%20did%20not%20previously%20exist%0A%20%20%20%20%20%20%20%20
+<p class="has-line-data" data-line-start="0" data-line-end="4">new kali and sudo<br>
+new kali uses non-privileged user<br>
+use sudo to run as root now, duh<br>
+su - to switch to root with kali’s pw, duh</p>
+<p class="has-line-data" data-line-start="5" data-line-end="32">navigating filesystem<br>
+pwd<br>
+print present working directory<br>
+cd …<br>
+change dir up one dir<br>
+ls -lha<br>
+list contents (long, human readable, all)<br>
+~<br>
+shorthand for home dir<br>
+mkdir newFolder<br>
+make directory newFolder here<br>
+echo “this text” &gt; newfile<br>
+output “this text” overwritten into newfile<br>
+cp /location/A/file /location/B/file<br>
+copy file from A to B<br>
+mv /path/A/file /path/B/FILE<br>
+move and rename file from A to B<br>
+updatebd<br>
+update cache of locations and paths<br>
+do this semi-frequently<br>
+passwd<br>
+change current user password<br>
+enter twice to over-ride complexity rules<br>
+man command<br>
+manpage for command<br>
+command --help<br>
+abbreviated manpage (sometimes)</p>
+<p class="has-line-data" data-line-start="33" data-line-end="57">Users and Privileges<br>
+rwx/rwx/rwx owner group<br>
+owner/group/all owner group<br>
+rwx = 421 bits<br>
+777 = rwxrwxrwx<br>
+111 = r–r--r–<br>
+123 = r—w-rw-<br>
+chmod -switch file<br>
+switch can be bits or switch<br>
+switch can set sticky bit too<br>
+set sticky bit = u+s<br>
+remove sticky bit = u-s<br>
+adduser<br>
+check the man for the cool switches<br>
+addgroup<br>
+again check the man for the cool options<br>
+deluser<br>
+delete user<br>
+usermod<br>
+modify user<br>
+passwd<br>
+passwd -switch username<br>
+su username<br>
+switch to user username</p>
+<p class="has-line-data" data-line-start="58" data-line-end="78">Common Network Commands<br>
+ifconfig<br>
+legacy ip addr<br>
+iwconfig<br>
+wireless<br>
+ip addr<br>
+replaced ifconfig<br>
+ip addr | grep ‘inet ’<br>
+ping -c n ip<br>
+ping n times this ip<br>
+arp -a<br>
+check ip and mac directly associated<br>
+netstat<br>
+view connections<br>
+netstat -ant<br>
+tcp<br>
+netstat -anu<br>
+udp<br>
+route<br>
+prints routing table</p>
+<p class="has-line-data" data-line-start="79" data-line-end="91">Installing and Updating Tools<br>
+sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y<br>
+sudo apt-get dist-upgrade -y<br>
+sudo apt-get install pip3<br>
+<a href="http://pimpmykali.sh">pimpmykali.sh</a><br>
+rm -rf pimpmykali/<br>
+git clone <a href="https://github.com/Dewalt-arch/pimpmykali">https://github.com/Dewalt-arch/pimpmykali</a><br>
+cd pimpmykali<br>
+sudo ./pimpmykali.sh<br>
+select 0<br>
+sudo apt install gedit -y<br>
+sudo apt install flameshot -y</p>
+<p class="has-line-data" data-line-start="92" data-line-end="109">Viewing, Creating, and Editing Files<br>
+echo ‘string’ &gt; textfile<br>
+echo ‘string’ &gt;&gt; textfile<br>
+appends the data<br>
+cat filename<br>
+more filename<br>
+less filename<br>
+less is more than more<br>
+head -n filename<br>
+list first n lines of filename<br>
+tail -n filename<br>
+list last n lines of filename<br>
+tail -f filename<br>
+cats tail of filename perpetually, good for logs<br>
+touch filename<br>
+changes timestamp to time touched<br>
+creates file that did not previously exist</p>
