@@ -10,13 +10,18 @@ tags:
  - Certs
 ---
 
-These are the notes I've taken for TheCyberMentor Academy's Practical Ethical Hacking - Intro to Linux section
+
 NOTE: Pasting my CherryTree notes into github without formatting is turning out to be some real hell.  
 I really don't want to start typing "&nbsp" everywhere in my notes.  
 The alternative is that my notes will look like crap when I post them into the blog.  
 I am not altogether against it.  Below I've opted to paste my notes into an online page break converter.  
 Maybe I should write a python tool to convert my raw notes into markdown, as practice.  
 Maybe.  
+NOTENOTE: Taking the old addage "Someone already made that tool", I've found some online markdown converters and repasted my notes.  
+I have lost the tab formatting, but at least everything below is readable and special characters converted.  
+
+
+These are the notes I've taken for TheCyberMentor Academy's Practical Ethical Hacking - Intro to Linux section
 
 <p class="has-line-data" data-line-start="0" data-line-end="4">new kali and sudo<br>
 new kali uses non-privileged user<br>
