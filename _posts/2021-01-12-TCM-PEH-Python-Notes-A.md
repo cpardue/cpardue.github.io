@@ -14,12 +14,12 @@ tags:
 <h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="Intro_to_Python_0"></a>Intro to Python</h3>
 <h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="python3_1"></a>(python3)</h4>
 <p class="has-line-data" data-line-start="2" data-line-end="3">################</p>
-<h3 class="code-line" data-line-start=5 data-line-end=6 ><a id="Start_of_a_Python_Script_if_pythonpy_5"></a>Start of a Python Script if ./python.py</h3>
+<h3 class="code-line" data-line-start=5 data-line-end=6 ><a id="Start_of_a_Python_Script_if_pythonpy_5"></a>Very first declaration of a Python Script if you run it with ./python.py</h3>
 <p class="has-line-data" data-line-start="6" data-line-end="8">#!/bin/python3<br>
 rest of script goes here</p>
-<h3 class="code-line" data-line-start=8 data-line-end=9 ><a id="not_necessary_if_you_run_with_python3_pythonpy_8"></a>not necessary if you run with $python3 <a href="http://python.py">python.py</a></h3>
+<h3 class="code-line" data-line-start=8 data-line-end=9 ><a id="not_necessary_if_you_run_with_python3_pythonpy_8"></a>not necessary if you run with $python3 python.py # like a normal human being.  it's not a shell script anyway</h3>
 <h3 class="code-line" data-line-start=11 data-line-end=12 ><a id="Commenting_11"></a>Commenting</h3>
-<h1 class="code-line" data-line-start=12 data-line-end=13 ><a id="this_is_a_comment_12"></a>this is a comment</h1>
+something(something) # this is a comment in python
 <h3 class="code-line" data-line-start=15 data-line-end=16 ><a id="Strings_15"></a>Strings</h3>
 <p class="has-line-data" data-line-start="16" data-line-end="22">print(“The String”)<br>
 print(“newline after this \n”)<br>
