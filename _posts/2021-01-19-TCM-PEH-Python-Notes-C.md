@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      TCM PEH Python Notes A
+title:      TCM PEH Python Notes C
 date:       2021-01-19
 summary:    TheCyberMentor's Practical Ethical Hacking Course Python Notes block C
 categories: Certs
