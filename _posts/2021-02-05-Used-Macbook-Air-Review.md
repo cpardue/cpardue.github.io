@@ -25,14 +25,17 @@ While looking around within the mac, I decided that Liveoverflow is right, Macs 
 This mid-2013 Macbook Air happens to have an I5, 8GB RAM, and a 512 NVMe.  The Wifi card is a proprietary connection.  
 Booting up is fine, as fast as any decent laptop.  But it's small and light.  
 Navigating around is fine, as fast as any decent laptop again.  It's OSX, so...  
-I had good luck installing Brew, and a host of pentesting tools via Brew packages, and Burp, and Virtualbox with a kali vm running, and it was all fine.  Just fine.  
-I decided to make some improvements to it, though.   
+I had good luck installing Brew, and a host of pentesting tools via Brew packages, and Burp, and Virtualbox with a kali vm running, and it was all fine.  Just fine.  Only fine.  
+It was super annoying trying to figure out how to import new modules into MSF5 through Kali documentation, when I'm on a Macbook working out of /opt/ directories.  
+I had to re-download wordlists, constantly download, move, and reconfigure programs, and using it as a pure pentesting platform was just a real pain.  
+I set up my Kali Virtualbox VM to auto load upon boot, but I was then just using this laptop as a pure VM host, which is largely useless because I'm running two OS' on one machine's resources.  Oooh I can snapshot the VM though.  Oooh well I shouldn't rm -rf /.  
+I decided to make some improvements to the Macbook Air to offset these liabilities and bring out the assets.   
 
 ## How To Imrpove Your Used Macbook Air  
--Pre-req's
--USB
--Wifi
--USB wifi card
+-Pre-req's  
+-USB  
+-Wifi  
+-USB wifi card  
 Go to https://www.kali.org/downloads/ and download a Kali ISO.  
 Press Command+Spacebar, search for Terminal, and open it.  
 Run the command _diskutil list_  
@@ -55,7 +58,7 @@ Check it against https://tutorialforlinux.com/2020/05/14/how-to-install-broadcom
 If WI, run the commands _sudo apt install broadcom-sta-dkms_ then _sudo reboot -h now_.  
 If B43, run the commands _sudo apt install firmware-b43-installer_ then _sudo reboot -h now_.  
 Remove the USB wifi card and connect your onboard wifi card to your wifi.  
-Open a terminal and run the following commands: 
+Open a terminal and run the following commands  
 1. sudo apt-get clean  
 2. sudo apt-get update -y  
 3. sudo apt-get upgrade -y  
