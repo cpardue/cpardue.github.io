@@ -14,21 +14,7 @@ Raw notes below:
 
 
 
-    Services
-    Documents
-        this is a comment.md
 
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
 
 <p class="has-line-data" data-line-start="0" data-line-end="2"><a href="https://www.vulnhub.com/entry/kioptrix-level-1-1,22/">https://www.vulnhub.com/entry/kioptrix-level-1-1,22/</a><br>
 it’s a vulnhub box, level 1</p>
@@ -53,21 +39,7 @@ sudo netdiscover -r 192.168.0.0/24</p>
 
 
 
-    Services
-    Documents
-        this is a comment.md
 
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="scanning_with_nmap_0"></a>scanning with nmap</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="5">losers call it “network mapper”<br>
@@ -275,21 +247,7 @@ our job is to scan for open ports, then try to exploit them.</p>
 
 
 
-    Services
-    Documents
-        this is a comment.md
-
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
+  
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Enumerating_HTTP_and_HTTPS_0"></a>Enumerating HTTP and HTTPS</h2>
 <h3 class="code-line" data-line-start=1 data-line-end=2 ><a id="think_about_it_from_the_POV_of_an_attacker_1"></a>think about it from the POV of an attacker</h3>
@@ -341,21 +299,7 @@ check server headers for information disclosure of webserver</p>
 
 
 
-    Services
-    Documents
-        this is a comment.md
-
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
+   
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Enumerating_SMB_0"></a>Enumerating SMB</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="7">port 139<br>
@@ -396,21 +340,7 @@ But SMB is always important for AD stuff later</p>
 
 
 
-    Services
-    Documents
-        this is a comment.md
-
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
+   
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Enumerating_SSH_0"></a>Enumerating SSH</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="3">Copy and paste your nmap scan ssh info into exploit-db<br>
@@ -429,21 +359,7 @@ I’ve run into this on htb often.</p>
 
 
 
-    Services
-    Documents
-        this is a comment.md
-
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
+   
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Researching_Vulnerabilities_0"></a>Researching Vulnerabilities</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="2">Identifying and researching potential vulnerabilities</p>
@@ -474,21 +390,7 @@ You can be too specific with searchsploit<br>
 
 
 
-    Services
-    Documents
-        this is a comment.md
-
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
+  
 
 <p class="has-line-data" data-line-start="0" data-line-end="12">–Site<br>
 ----hostname<br>
@@ -507,21 +409,7 @@ Toggle Mode
 
 
 
-    Services
-    Documents
-        this is a comment.md
-
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
+ 
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Scanning_with_Masscan_0"></a>Scanning with Masscan</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="6">Masscan was built to scan the entire internet really fast<br>
@@ -537,21 +425,7 @@ NOTE: masscan uses its own ad hoc TCP/IP stack. Anything other than simple port 
 
 
 
-    Services
-    Documents
-        this is a comment.md
-
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
+  
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Scanning_with_Metasploit_0"></a>Scanning with Metasploit</h2>
 <blockquote>
@@ -567,21 +441,7 @@ it’s just another auxiliary module you should know you can use</p>
 
 
 
-    Services
-    Documents
-        this is a comment.md
-
-Stripe powers your full financial infrastructure with one integration.
-
-    Preview as
-    Export as
-    Save to
-    Import from
-
-Document Name
-Markdown
-Preview
-Toggle Mode
+  
 
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Scanning_with_Nessus_0"></a>Scanning with Nessus</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="2">Typically you will start a Nessus scan, then move to enumeration, then return to the Nessus scan once it’s complete</p>
