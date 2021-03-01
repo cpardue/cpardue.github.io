@@ -20,16 +20,13 @@ works if <del>for some reason you need to update your post</del>. For consistenc
 <ins>The same goes for insertions</ins>, of course.
 
 ### Code, with syntax highlighting
-
-Code blocks use the [peppermint][2] theme.
+Code blocks use [peppermint][2] theme.
 
 {% highlight ruby %}
 class Awesome < ActiveRecord::Base
   include EvenMoreAwesome
-
   validates_presence_of :something
   validates :email, email_format: true
-
   def initialize(email, name = nil)
     self.email = email
     self.name = name
@@ -40,13 +37,10 @@ end
 ```html
 <!DOCTYPE html>
 <title>Title</title>
-
 <style>body {width: 500px;}</style>
-
 <script type="application/javascript">
   function $init() {return true;}
 </script>
-
 <body>
   <p checked class="title" id='title'>Title</p>
   <!-- here goes the rest of the page -->
@@ -54,41 +48,29 @@ end
 ```
 
 # Headings!
-
 They're responsive, and well-proportioned (in `padding`, `line-height`, `margin`, and `font-size`).
-
 ##### They draw the perfect amount of attention
-
 This allows your content to have the proper informational and contextual hierarchy. Yay.
 
-### There are lists, too
-
+### Lists
   * Apples
   * Oranges
   * Potatoes
   * Milk
-
   1. Mow the lawn
   2. Feed the dog
   3. Dance
 
-### Images look great, too
-
+### Images
 ![Thumper](https://i.imgur.com/DMCHDqF.jpg)
 
-
-### Stylish blockquotes included
-
+### Stylish blockquotes 
 You can use the markdown quote syntax, `>` for simple quotes.
-
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis porta mauris.
 
 ### LaTeX support
-
 The default math delimiters are \$\$. Hence `$$ E = m \cdot c^2 $$` yields $$ E = m \cdot c^2 $$
-
 And here's something more fancy:
-
 $$ \zeta(s) = \frac{1}{\Gamma(s)} \int \limits_0^\infty x^{s-1} \sum_{n=1}^\infty e^{-nx} \mathrm{d}x = \frac{1}{\Gamma(s)} \int \limits_0^\infty \frac{x^{s-1}}{e^x - 1} \mathrm{d}x $$
 
 
