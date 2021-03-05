@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      Title Here
-date:       2021-02-28
-summary:    Summary Here
-categories: Category
+title:      TheCyberMentor PEH Course Scanning/Enumeration Notes
+date:       2021-03-04
+summary:    TheCyberMentor Practical Ethical Hacker Course, Scanning and Enumeration notes
+categories: certs
 thumbnail: cogs
 tags:
- - tag
+ - certs
 ---
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Scanning_with_Nessus_0"></a>Scanning with Nessus</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="2">Typically you will start a Nessus scan, then move to enumeration, then return to the Nessus scan once it’s complete</p>
