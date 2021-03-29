@@ -19,6 +19,7 @@ ADB is used to place phone into Bootloader mode.  (Think of this as a BIOS Boot 
 ADB is used to unlock the phone.<br>
 ADB is used to flash a recovery image to the phone.  (This will be the new second stage BIOS environment.)<br>
 The phone is then booted into the recovery environment, to install new packages or flavors of Android.<br>
+Among new packages installed, install SuperSu, which roots the phone.<br>
 I performed the steps above without much issue.<br>
 Now comes the annoying and fun stuff.<br>
 I only rooted this phone to install Kali Nethunter on it.  So, on to the next task.</p>
