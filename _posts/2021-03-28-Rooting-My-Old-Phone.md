@@ -57,3 +57,10 @@ Is there an OWASP ZAP Proxy port???<br>
 Can I do vlan hopping with this thing???<br>
 Can I install and properly use Wifi Pumpkin???<br>
 The possible applications of this innoculous phone are very exciting!</p>
+### Update to the Update
+I downlaoded the latest generic Nethunter release and reinstalled it.<br>
+Nethunter App Store is working now.<br>
+Re-transferred and installed SuperSu via PBRP.<br>
+I have upgraded all Kali packages, installed other apps, and updated them.<br>
+I went ahead and installed the standard non-root WiFi apps and some http intercept apps.<br>
+Have not yet found a Responder app for Nethunter, maybe regular install would work.<br>
