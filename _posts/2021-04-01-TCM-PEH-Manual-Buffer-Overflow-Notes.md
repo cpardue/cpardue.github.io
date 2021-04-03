@@ -8,8 +8,7 @@ thumbnail: cogs
 tags:
  - certs
 ---
-<h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Finally_here_bois_0"></a>Babby's first bottle bof!!!</h2>
-<h2 class="code-line" data-line-start=1 data-line-end=2 ><a id="Intro_to_Buffer_Overflows_1"></a>Intro to Buffer Overflows</h2>
+<h2 class="code-line" data-line-start=1 data-line-end=2 ><a id="Intro_to_Buffer_Overflows_1"></a>Intro to Buffer Overflows Notes</h2>
 <h3 class="code-line" data-line-start=2 data-line-end=3 ><a id="Required_Installations_2"></a>Required Installations</h3>
 <p class="has-line-data" data-line-start="3" data-line-end="8">Windows 7, 8.1, or 10<br>
 Within that, Vulnserver (<a href="https://github.com/stephenbradshaw/vulnserver">https://github.com/stephenbradshaw/vulnserver</a>)<br>
