@@ -246,7 +246,7 @@ Go back to immunity</p>
 -m = module<br>
 essfunc.dll = the unprotected module found from !mona modules<br>
 In the results, you’ll see the first column in table is locations for FFE4 pointers </p>
-![imageI](https://i.imgur.com/c1dEZn7.png)
+<img src="https://i.imgur.com/c1dEZn7.png" alt="imageI">
 <p class="has-line-data" data-line-start="254" data-line-end="270">Back in terminal,<br>
 edit the <a href="http://2.py">2.py</a> script as:<br>
 {% highlight ruby %}<br>
