@@ -264,7 +264,7 @@ except:
 {% endhighlight %}<br>
 Save and close.</p>
 <p class="has-line-data" data-line-start="271" data-line-end="280">Back in immunity,<br>
-click the Follow Expression arrow and enter the essfunc.dll pointer 625011af as in pic (<a href="https://i.imgur.com/FCwEnO3.png">https://i.imgur.com/FCwEnO3.png</a>)<br>
+click the Follow Expression arrow and enter the essfunc.dll pointer 625011af as in pic <img src="https://i.imgur.com/FCwEnO3.png" alt="imageJ"><br>
 Immunity will jump to that position in the code, it should be a JMP ESP call.<br>
 Press F2 to set break point at that position.<br>
 Now when we run the program, IF <a href="http://2.py">2.py</a> jumps to that call, then the program will halt.<br>
