@@ -49,7 +49,9 @@ print(folder_name)
 print("I need a target IP address to scan...")
 target_IP = input("Enter target IP : ")
 print(target_IP)
-
+{% endhighlight %}
+The basic idea above is that when I run the script, I'd like to clear the terminal, then make sure that I ran as root, then name a new folder (HTB box name) and input the IP.  This will help me keep things orderly.  I'd also like to generate a "quick notes" textfile from the scans, but that's for later.  I have to get this script's most basically proposed functionality working, first.  THEN I can ruin it with more stuff.  
+{% highlight ruby %}
 # functions
 
 # function make_folder()
