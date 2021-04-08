@@ -71,14 +71,14 @@ print("Starting initial nmap scan and dumping into 1_nmap_sweep.txt...")
 nmap_sweep = os.system("nmap -Pn -p- -T5 -oN ./" + folder_name + "/1_nmap_sweep.txt " + target_IP)
 print(nmap_sweep) # print out the ongoing scan
 print("...DONE!\n") # when above is done, print done and move on
+{% endhighlight %}
+Note: The above is performing an all port scan at default speed.  The idea is that it's much faster to do a non-aggressive scan of all ports, then do an aggressive scan of only the open ports.  This way, I don't have to worry about missing something in a fast scan, which most certainly WILL miss something.  
+{% highlight ruby %}
 # pull ports marked open, create either a new file or an array open_ports
 print("Processing open ports into open_ports.txt...")
 get_ports_open = os.system("cat " + folder_name + "/1_nmap_sweep.txt | grep ^[:0-9:] | grep open | awk '{print $1}' | sed 's/\/tcp//g' > ./ports_open.txt")
 print(get_ports_open)
 print("...DONE!\n")
-{% endhighlight %}
-Note: The above is performing an all port scan at default speed.  The idea is that it's much faster to do a non-aggressive scan of all ports, then do an aggressive scan of only the open ports.  This way, I don't have to worry about missing something in a fast scan, which most certainly WILL miss something.  
-{% highlight ruby %}
 # pull ports marked open and http, and create either a new file or an array http_ports
 print("Processing open http ports into ports_http.txt...")
 get_ports_http = os.system("cat " + folder_name + "/1_nmap_sweep.txt | grep ^[:0-9:] | grep http* | awk '{print $1}' | sed 's/\/tcp//g' > ./ports_http.txt")
