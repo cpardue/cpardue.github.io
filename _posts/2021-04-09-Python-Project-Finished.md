@@ -107,7 +107,7 @@ print("...DONE!\n") # when above is done, print done and move on
 ## Gobuster scan  
 The script then moves on to gobuster.  It uses the seclists raft-large wordlist to fuzz for directories found in ports_http.txt.  
 This one was tricky for me to figure out.  
-I had to open ports.http.txt, then stat a FOR loop: for each line in the file, do a gobuster scan.  
+I had to open ports.http.txt, then start a FOR loop: for each line in the file, do a gobuster scan.  
 Python was opening the lines in ports_http.txt as an array (list), and I couldn't just concatenate the lines with the os.system commands because the os.system commands are strings.  I kept getting a "you can't concatenate list with str" error and had to figure out how to make both the list and string values either all list, or all strings.  It was easier to re-declare everything as strings, then concatenate each of these individual declarations.  
 I also ran into the issue of having line breaks in the ports_http.txt file, from back where I told nmap to pull the http ports from the initial scan and paste them into a new ports_http.txt file.  So, I also had to google and implement a line replace in the for loop, replacing "\n" for "" in each line iteration.  
 The loop then renames and moves the scan result at the end of each for loop, placing the actual port # in the name of the resulting scan so that you don't just end up with multiple copies of "3_gobuster_scan.txt".  
