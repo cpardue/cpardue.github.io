@@ -40,5 +40,10 @@
 <!-- MathJax for LaTeX -->
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
+  
+{% if jekyll.environment == 'production' %}
+<!-- Google Analytics pointer to analytics.html, which points to Google Analytics code in config.yaml -->
+{% include analytics.html %}
+{% endif %}
 
 </head>
