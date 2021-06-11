@@ -8,19 +8,19 @@ thumbnail: cogs
 tags:
  - admin
 ---
-##Operation Dropship
-###5 Paragraph Order
-###Orientation
+## Operation Dropship  
+### 5 Paragraph Order  
+### Orientation  
 I'm building an online store to house things I would have bought years ago.  
-###Situation
+### Situation  
 I have enough income to support an online store.  
 I have performed recon and identified key components necessary to complete this task.  
-###Mission
+### Mission  
 Build out an online store.  
 Link it in a few places.  
-Perform SEO for self-support.
-###Execution
-In July, perform the following tasks:
+Perform SEO for self-support.  
+### Execution  
+In July, perform the following tasks:  
 Purchase domain.  
 Purchase Wix Business account.  
 Build Wix site.  
@@ -29,9 +29,9 @@ Finalize initial product listings.
 Populate store with products.  
 Tweak store design.  
 Go live.  
-###Administration
+### Administration  
 Domain should be a tongue in cheek reference to IT or script kiddies.  
-###Logistics
+### Logistics  
 Domain ending in .io is $60/yr flat rate.  
 Domain ending in .com can be as low as $12/yr flat rate.  
 Wix Business account appears to be $27/mo.  
