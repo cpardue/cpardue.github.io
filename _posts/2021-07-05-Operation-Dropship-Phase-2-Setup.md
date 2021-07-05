@@ -16,7 +16,7 @@ The best I could do is come up with Valid Group, and shorten it to ValidGRP.
 I got the domain for $1/mo and paid for a year up front.  Sweet.  
 I also started making logos in free logo generators online, and quickly found that every single one of them want me to pay to then download the freely generated logos.  
 So...I generated a logo, then remade it in GIMP, at multiple sizes, with and without transparent backgrounds.  
-___
+___  
 So I set up a store in Wix.  
 I linked it to a Modalyst plugin.  
 The Modalyst free plan has a 25 item limit.  
